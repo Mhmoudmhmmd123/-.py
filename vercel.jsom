@@ -1,0 +1,15 @@
+{
+  "functions": {
+    "api/bot.py": {
+      "runtime": "python3.11",
+      "maxDuration": 60,
+      "memory": 1024
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/api/bot.py"
+    }
+  ]
+}
